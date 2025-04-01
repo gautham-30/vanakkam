@@ -1,0 +1,15 @@
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="AmazonAutomationSuite" parallel="false">
+
+    <test name="Amazon Tests">
+        <classes>
+            <class name="com.amazon.automation.LoginTest"/>
+            <class name="com.amazon.automation.ForgotPassword"/>
+            <class name="com.amazon.automation.Search_Add_To_Cart"/>
+            <class name="com.amazon.automation.Automate_Address"/>
+            <class name="com.amazon.automation.Automate_Checkout_Review"/>
+            <class name="com.amazon.automation.Automate_Payementoption"/>
+        </classes>
+    </test>
+
+</suite>
