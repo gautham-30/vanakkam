@@ -1,0 +1,544 @@
+<!DOCTYPE html>
+
+<html>
+  <head>
+  <meta charset='utf-8'>
+  <title>TestNG reports</title>
+
+    <link type="text/css" href="testng-reports1.css" rel="stylesheet" id="ultra" />
+    <link type="text/css" href="testng-reports.css" rel="stylesheet" id="retro" disabled="false"/>
+    <script type="text/javascript" src="jquery-3.6.0.min.js"></script>
+    <script type="text/javascript" src="testng-reports.js"></script>
+    <script type="text/javascript" src="https://www.google.com/jsapi"></script>
+    <script type='text/javascript'>
+      google.load('visualization', '1', {packages:['table']});
+      google.setOnLoadCallback(drawTable);
+      var suiteTableInitFunctions = new Array();
+      var suiteTableData = new Array();
+    </script>
+    <!--
+      <script type="text/javascript" src="jquery-ui/js/jquery-ui-1.8.16.custom.min.js"></script>
+     -->
+  </head>
+
+  <body>    <div class="top-banner-root">
+      <span class="top-banner-title-font">Test results</span>
+      <button id="button" class="button">Switch Retro Theme</button> <!-- button -->
+      <br/>
+      <span class="top-banner-font-1">1 suite, 10 failed tests</span>
+    </div> <!-- top-banner-root -->
+    <div class="navigator-root">
+      <div class="navigator-suite-header">
+        <span>All suites</span>
+        <a href="#" title="Collapse/expand all the suites" class="collapse-all-link">
+          <img src="collapseall.gif" class="collapse-all-icon">
+          </img> <!-- collapse-all-icon -->
+        </a> <!-- collapse-all-link -->
+      </div> <!-- navigator-suite-header -->
+      <div class="suite">
+        <div class="rounded-window">
+          <div class="suite-header light-rounded-window-top">
+            <a href="#" panel-name="suite-AmazonAutomationSuite" class="navigator-link">
+              <span class="suite-name border-failed">AmazonAutomationSuite</span>
+            </a> <!-- navigator-link -->
+          </div> <!-- suite-header light-rounded-window-top -->
+          <div class="navigator-suite-content">
+            <div class="suite-section-title">
+              <span>Info</span>
+            </div> <!-- suite-section-title -->
+            <div class="suite-section-content">
+              <ul>
+                <li>
+                  <a href="#" panel-name="test-xml-AmazonAutomationSuite" class="navigator-link ">
+                    <span>C:\Users\ELCOT\eclipse-workspace\amazon-test\testng.xml</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="testlist-AmazonAutomationSuite" class="navigator-link ">
+                    <span class="test-stats">1 test</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="group-AmazonAutomationSuite" class="navigator-link ">
+                    <span>0 groups</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="times-AmazonAutomationSuite" class="navigator-link ">
+                    <span>Times</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="reporter-AmazonAutomationSuite" class="navigator-link ">
+                    <span>Reporter output</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="ignored-methods-AmazonAutomationSuite" class="navigator-link ">
+                    <span>Ignored methods</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+                <li>
+                  <a href="#" panel-name="chronological-AmazonAutomationSuite" class="navigator-link ">
+                    <span>Chronological view</span>
+                  </a> <!-- navigator-link  -->
+                </li>
+              </ul>
+            </div> <!-- suite-section-content -->
+            <div class="result-section">
+              <div class="suite-section-title">
+                <span>Results</span>
+              </div> <!-- suite-section-title -->
+              <div class="suite-section-content">
+                <ul>
+                  <li>
+                    <span class="method-stats">10 methods, 10 failed,   </span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-AmazonAutomationSuite" class="hide-methods failed suite-AmazonAutomationSuite"> (hide)</a> <!-- hide-methods failed suite-AmazonAutomationSuite -->
+                      <a href="#" panel-name="suite-AmazonAutomationSuite" class="show-methods failed suite-AmazonAutomationSuite"> (show)</a> <!-- show-methods failed suite-AmazonAutomationSuite -->
+                    </span>
+                    <div class="method-list-content failed suite-AmazonAutomationSuite">
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.Automate_Address" class="method navigator-link" hash-for-method="addAddress">addAddress</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.Automate_Payementoption" class="method navigator-link" hash-for-method="addPaymentMethod">addPaymentMethod</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.Search_Add_To_Cart" class="method navigator-link" hash-for-method="addProductsToCart">addProductsToCart</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.Automate_Checkout_Review" class="method navigator-link" hash-for-method="proceedToCheckout">proceedToCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.Automate_Checkout_Review" class="method navigator-link" hash-for-method="reviewProduct">reviewProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.Search_Add_To_Cart" class="method navigator-link" hash-for-method="searchProduct">searchProduct</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.Automate_Payementoption" class="method navigator-link" hash-for-method="selectPaymentAtCheckout">selectPaymentAtCheckout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.ForgotPassword" class="method navigator-link" hash-for-method="testForgotPassword">testForgotPassword</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.LoginTest" class="method navigator-link" hash-for-method="testLogin">testLogin</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img src="failed.png" width="3%"/>
+                        <a href="#" panel-name="suite-AmazonAutomationSuite" title="com.amazon.automation.LoginTest" class="method navigator-link" hash-for-method="testLogout">testLogout</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-AmazonAutomationSuite -->
+                  </li>
+                </ul>
+              </div> <!-- suite-section-content -->
+            </div> <!-- result-section -->
+          </div> <!-- navigator-suite-content -->
+        </div> <!-- rounded-window -->
+      </div> <!-- suite -->
+    </div> <!-- navigator-root -->
+    <div class="wrapper">
+      <div class="main-panel-root">
+        <div panel-name="suite-AmazonAutomationSuite" class="panel AmazonAutomationSuite">
+          <div class="suite-AmazonAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amazon.automation.LoginTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogin">
+                  </a> <!-- testLogin -->
+                  <span class="method-name">testLogin</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.LoginTest.driver&quot; is null
+	at com.amazon.automation.LoginTest.testLogin(LoginTest.java:9)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="testLogout">
+                  </a> <!-- testLogout -->
+                  <span class="method-name">testLogout</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.LoginTest.driver&quot; is null
+	at com.amazon.automation.LoginTest.testLogout(LoginTest.java:21)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonAutomationSuite-class-failed -->
+          <div class="suite-AmazonAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amazon.automation.Search_Add_To_Cart</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addProductsToCart">
+                  </a> <!-- addProductsToCart -->
+                  <span class="method-name">addProductsToCart</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.Search_Add_To_Cart.driver&quot; is null
+	at com.amazon.automation.Search_Add_To_Cart.addProductsToCart(Search_Add_To_Cart.java:18)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="searchProduct">
+                  </a> <!-- searchProduct -->
+                  <span class="method-name">searchProduct</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.Search_Add_To_Cart.driver&quot; is null
+	at com.amazon.automation.Search_Add_To_Cart.searchProduct(Search_Add_To_Cart.java:10)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonAutomationSuite-class-failed -->
+          <div class="suite-AmazonAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amazon.automation.Automate_Checkout_Review</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="proceedToCheckout">
+                  </a> <!-- proceedToCheckout -->
+                  <span class="method-name">proceedToCheckout</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.Automate_Checkout_Review.driver&quot; is null
+	at com.amazon.automation.Automate_Checkout_Review.proceedToCheckout(Automate_Checkout_Review.java:8)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="reviewProduct">
+                  </a> <!-- reviewProduct -->
+                  <span class="method-name">reviewProduct</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.Automate_Checkout_Review.driver&quot; is null
+	at com.amazon.automation.Automate_Checkout_Review.reviewProduct(Automate_Checkout_Review.java:14)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonAutomationSuite-class-failed -->
+          <div class="suite-AmazonAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amazon.automation.ForgotPassword</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="testForgotPassword">
+                  </a> <!-- testForgotPassword -->
+                  <span class="method-name">testForgotPassword</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.ForgotPassword.driver&quot; is null
+	at com.amazon.automation.ForgotPassword.testForgotPassword(ForgotPassword.java:8)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonAutomationSuite-class-failed -->
+          <div class="suite-AmazonAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amazon.automation.Automate_Payementoption</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addPaymentMethod">
+                  </a> <!-- addPaymentMethod -->
+                  <span class="method-name">addPaymentMethod</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.Automate_Payementoption.driver&quot; is null
+	at com.amazon.automation.Automate_Payementoption.addPaymentMethod(Automate_Payementoption.java:9)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+              <div class="method">
+                <div class="method-content">
+                  <a name="selectPaymentAtCheckout">
+                  </a> <!-- selectPaymentAtCheckout -->
+                  <span class="method-name">selectPaymentAtCheckout</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.Automate_Payementoption.driver&quot; is null
+	at com.amazon.automation.Automate_Payementoption.selectPaymentAtCheckout(Automate_Payementoption.java:34)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonAutomationSuite-class-failed -->
+          <div class="suite-AmazonAutomationSuite-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">com.amazon.automation.Automate_Address</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="addAddress">
+                  </a> <!-- addAddress -->
+                  <span class="method-name">addAddress</span>
+                  <div class="stack-trace">java.lang.NullPointerException: Cannot invoke &quot;org.openqa.selenium.WebDriver.findElement(org.openqa.selenium.By)&quot; because &quot;com.amazon.automation.Automate_Address.driver&quot; is null
+	at com.amazon.automation.Automate_Address.addAddress(Automate_Address.java:8)
+	at java.base/java.util.ArrayList.forEach(ArrayList.java:1596)
+... Removed 25 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-AmazonAutomationSuite-class-failed -->
+        </div> <!-- panel AmazonAutomationSuite -->
+        <div panel-name="test-xml-AmazonAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">C:\Users\ELCOT\eclipse-workspace\amazon-test\testng.xml</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <pre>
+&lt;?xml version=&quot;1.0&quot; encoding=&quot;UTF-8&quot;?&gt;
+&lt;!DOCTYPE suite SYSTEM &quot;https://testng.org/testng-1.0.dtd&quot;&gt;
+&lt;suite name=&quot;AmazonAutomationSuite&quot; guice-stage=&quot;DEVELOPMENT&quot;&gt;
+  &lt;test thread-count=&quot;5&quot; name=&quot;Amazon Tests&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;com.amazon.automation.LoginTest&quot;/&gt;
+      &lt;class name=&quot;com.amazon.automation.ForgotPassword&quot;/&gt;
+      &lt;class name=&quot;com.amazon.automation.Search_Add_To_Cart&quot;/&gt;
+      &lt;class name=&quot;com.amazon.automation.Automate_Address&quot;/&gt;
+      &lt;class name=&quot;com.amazon.automation.Automate_Checkout_Review&quot;/&gt;
+      &lt;class name=&quot;com.amazon.automation.Automate_Payementoption&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- Amazon Tests --&gt;
+&lt;/suite&gt; &lt;!-- AmazonAutomationSuite --&gt;
+            </pre>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="testlist-AmazonAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Tests for AmazonAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <ul>
+              <li>
+                <span class="test-name">Amazon Tests (6 classes)</span>
+              </li>
+            </ul>
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="group-AmazonAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Groups for AmazonAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="times-AmazonAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Times for AmazonAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="times-div">
+              <script type="text/javascript">
+suiteTableInitFunctions.push('tableData_AmazonAutomationSuite');
+function tableData_AmazonAutomationSuite() {
+var data = new google.visualization.DataTable();
+data.addColumn('number', 'Number');
+data.addColumn('string', 'Method');
+data.addColumn('string', 'Class');
+data.addColumn('number', 'Time (ms)');
+data.addRows(10);
+data.setCell(0, 0, 0)
+data.setCell(0, 1, 'testLogin')
+data.setCell(0, 2, 'com.amazon.automation.LoginTest')
+data.setCell(0, 3, 77);
+data.setCell(1, 0, 1)
+data.setCell(1, 1, 'searchProduct')
+data.setCell(1, 2, 'com.amazon.automation.Search_Add_To_Cart')
+data.setCell(1, 3, 54);
+data.setCell(2, 0, 2)
+data.setCell(2, 1, 'proceedToCheckout')
+data.setCell(2, 2, 'com.amazon.automation.Automate_Checkout_Review')
+data.setCell(2, 3, 18);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'reviewProduct')
+data.setCell(3, 2, 'com.amazon.automation.Automate_Checkout_Review')
+data.setCell(3, 3, 17);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'addAddress')
+data.setCell(4, 2, 'com.amazon.automation.Automate_Address')
+data.setCell(4, 3, 17);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'testLogout')
+data.setCell(5, 2, 'com.amazon.automation.LoginTest')
+data.setCell(5, 3, 14);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'selectPaymentAtCheckout')
+data.setCell(6, 2, 'com.amazon.automation.Automate_Payementoption')
+data.setCell(6, 3, 11);
+data.setCell(7, 0, 7)
+data.setCell(7, 1, 'addProductsToCart')
+data.setCell(7, 2, 'com.amazon.automation.Search_Add_To_Cart')
+data.setCell(7, 3, 9);
+data.setCell(8, 0, 8)
+data.setCell(8, 1, 'testForgotPassword')
+data.setCell(8, 2, 'com.amazon.automation.ForgotPassword')
+data.setCell(8, 3, 8);
+data.setCell(9, 0, 9)
+data.setCell(9, 1, 'addPaymentMethod')
+data.setCell(9, 2, 'com.amazon.automation.Automate_Payementoption')
+data.setCell(9, 3, 8);
+window.suiteTableData['AmazonAutomationSuite']= { tableData: data, tableDiv: 'times-div-AmazonAutomationSuite'}
+return data;
+}
+              </script>
+              <span class="suite-total-time">Total running time: 233 ms</span>
+              <div id="times-div-AmazonAutomationSuite">
+              </div> <!-- times-div-AmazonAutomationSuite -->
+            </div> <!-- times-div -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="reporter-AmazonAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Reporter output for AmazonAutomationSuite</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="ignored-methods-AmazonAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">0 ignored methods</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+        <div panel-name="chronological-AmazonAutomationSuite" class="panel">
+          <div class="main-panel-header rounded-window-top">
+            <span class="header-content">Methods in chronological order</span>
+          </div> <!-- main-panel-header rounded-window-top -->
+          <div class="main-panel-content rounded-window-bottom">
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automation.LoginTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogin</span>
+                <span class="method-start">0 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testLogout</span>
+                <span class="method-start">116 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automation.ForgotPassword</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">testForgotPassword</span>
+                <span class="method-start">181 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automation.Search_Add_To_Cart</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">searchProduct</span>
+                <span class="method-start">211 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addProductsToCart</span>
+                <span class="method-start">290 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automation.Automate_Address</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addAddress</span>
+                <span class="method-start">336 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automation.Automate_Checkout_Review</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">proceedToCheckout</span>
+                <span class="method-start">394 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">reviewProduct</span>
+                <span class="method-start">460 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">com.amazon.automation.Automate_Payementoption</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">addPaymentMethod</span>
+                <span class="method-start">521 ms</span>
+              </div> <!-- test-method -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">selectPaymentAtCheckout</span>
+                <span class="method-start">586 ms</span>
+              </div> <!-- test-method -->
+          </div> <!-- main-panel-content rounded-window-bottom -->
+        </div> <!-- panel -->
+      </div> <!-- main-panel-root -->
+    </div> <!-- wrapper -->
+  </body>
+<script type="text/javascript" src="testng-reports2.js"></script>
+</html>

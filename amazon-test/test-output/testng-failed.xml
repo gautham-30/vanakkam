@@ -1,0 +1,42 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "https://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [AmazonAutomationSuite]" guice-stage="DEVELOPMENT">
+  <test thread-count="5" name="Amazon Tests(failed)">
+    <classes>
+      <class name="com.amazon.automation.Search_Add_To_Cart">
+        <methods>
+          <include name="addProductsToCart"/>
+          <include name="searchProduct"/>
+        </methods>
+      </class> <!-- com.amazon.automation.Search_Add_To_Cart -->
+      <class name="com.amazon.automation.LoginTest">
+        <methods>
+          <include name="testLogin"/>
+          <include name="testLogout"/>
+        </methods>
+      </class> <!-- com.amazon.automation.LoginTest -->
+      <class name="com.amazon.automation.Automate_Checkout_Review">
+        <methods>
+          <include name="proceedToCheckout"/>
+          <include name="reviewProduct"/>
+        </methods>
+      </class> <!-- com.amazon.automation.Automate_Checkout_Review -->
+      <class name="com.amazon.automation.ForgotPassword">
+        <methods>
+          <include name="testForgotPassword"/>
+        </methods>
+      </class> <!-- com.amazon.automation.ForgotPassword -->
+      <class name="com.amazon.automation.Automate_Payementoption">
+        <methods>
+          <include name="selectPaymentAtCheckout"/>
+          <include name="addPaymentMethod"/>
+        </methods>
+      </class> <!-- com.amazon.automation.Automate_Payementoption -->
+      <class name="com.amazon.automation.Automate_Address">
+        <methods>
+          <include name="addAddress"/>
+        </methods>
+      </class> <!-- com.amazon.automation.Automate_Address -->
+    </classes>
+  </test> <!-- Amazon Tests(failed) -->
+</suite> <!-- Failed suite [AmazonAutomationSuite] -->
